@@ -27,7 +27,7 @@ Ensure that Docker is running. This line of code sets up Wordpress for Docker. I
 wp-env
 ```
 
-Then open [http://localhost:8888]().
+Then open [http://localhost:8889]().
 
 Admin: [http://localhost:8888/wp-admin]().
  - username: `admin`
