@@ -24,7 +24,7 @@ Quickstart:
 ---
 Ensure that Docker is running. This line of code sets up Wordpress for Docker. It may take a second initially.
 ```
-wp-env
+wp-env start
 ```
 
 Then open [http://localhost:8889]().
@@ -34,3 +34,8 @@ Admin: [http://localhost:8888/wp-admin]().
  - password: `password`
 
 Change the passwords from their defaults before publishing.
+
+# WooCommerce
+shopifying Wordpress may also require [WooCommerce](). This is an open source with plenty of [extensions](https://woocommerce.com/product-category/woocommerce-extensions/?categoryIds=1021&collections=product&page=1&min=0&max=0) and [documentation](https://woocommerce.com/documentation/woocommerce/)
+
+Woocommerce has a Square Plugin.
