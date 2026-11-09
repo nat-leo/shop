@@ -1,0 +1,21 @@
+.latte-configurator { --latte-ink: #30281f; --latte-accent: #365440; color: var(--latte-ink); background: #fcfaf6; border: 1px solid #ded8ce; border-radius: 20px; padding: clamp(20px, 4vw, 40px); max-width: 960px; margin: 24px auto; font-family: system-ui, sans-serif; line-height: 1.5; }
+.latte-configurator * { box-sizing: border-box; }
+.latte-configurator h2 { color: inherit; font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; line-height: 1.2; }
+.latte-configurator header > p { margin: 0 0 24px; }
+.latte-configurator .latte-eyebrow { color: var(--latte-accent); font-size: 12px; font-weight: 750; letter-spacing: .16em; margin-bottom: 12px; }
+.latte-layout { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(220px, 1fr); gap: 32px; align-items: start; }
+.latte-configurator .latte-field { border: 0; padding: 0; margin: 0 0 24px; min-width: 0; }
+.latte-field legend { padding: 0; margin-bottom: 10px; font-size: 15px; font-weight: 700; }
+.latte-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.latte-option { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #bcb7ad; border-radius: 8px; padding: 10px 14px; background: #fff; cursor: pointer; font-size: 14px; }
+.latte-option:has(input:checked) { background: #edf3eb; border-color: var(--latte-accent); }
+.latte-option:focus-within { outline: 2px solid var(--latte-accent); outline-offset: 3px; }
+.latte-option input { accent-color: var(--latte-accent); margin: 0; width: 16px; height: 16px; }
+.latte-summary { background: #ece8df; border-radius: 14px; padding: 24px; overflow-wrap: anywhere; }
+.latte-summary h3 { font-size: 20px; margin: 0 0 12px; color: inherit; }
+.latte-drink { font-size: 23px; font-weight: 650; margin: 0 0 20px; }
+.latte-summary dl { margin: 0; }
+.latte-summary dt { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; margin-top: 16px; color: #59564e; }
+.latte-summary dd { margin: 3px 0 0; font-size: 16px; }
+.latte-note { font-size: 12px; margin: 24px 0 0; color: #59564e; }
+@media (max-width: 640px) { .latte-layout { grid-template-columns: 1fr; gap: 8px; } }
