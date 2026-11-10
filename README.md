@@ -97,3 +97,10 @@ Your local PHP file is mounted into WordPress, so saved code changes appear when
 shopifying Wordpress may also require [WooCommerce](). This is an open source with plenty of [extensions](https://woocommerce.com/product-category/woocommerce-extensions/?categoryIds=1021&collections=product&page=1&min=0&max=0) and [documentation](https://woocommerce.com/documentation/woocommerce/)
 
 Woocommerce has a Square Plugin.
+
+Here's how to add WooCommerce to Wordpress:
+```
+npx wp-env start
+npx wp-env run cli wp plugin install woocommerce --activate
+```
+Super easy.
