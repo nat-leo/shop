@@ -4,6 +4,9 @@
     "./latte",
     "./email-notification"
   ],
+  "mappings": {
+    ".env": ".env"
+  },
   "config": {
     "WP_MEMORY_LIMIT": "512M",
     "WP_MAX_MEMORY_LIMIT": "512M",
