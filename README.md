@@ -27,6 +27,23 @@ Ensure that Docker is running. This line of code sets up Wordpress for Docker. I
 npx wp-env start
 ```
 
+Check for available plugin updates and install them:
+
+```bash
+npx wp-env run cli wp plugin list --update=available
+npx wp-env run cli wp plugin update --all
+```
+
+Check errors from the Docker contianer with:
+```bash
+npx wp-env run cli tail -f wp-content/debug.log
+```
+
+Plugins mounted from local folders in `.wp-env.json` are updated by editing their
+source files, not by the `wp plugin update` command.
+
+Stop the local WordPress environment when you're finished:
+
 ```
 npx wp-env stop
 ```
